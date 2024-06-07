@@ -15,6 +15,13 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
+Me chamo Ewerton Bramos e adoro tecnologia desde que me entendo por gente.
+
+![Web design](https://img.shields.io/badge/Web-green)
+![APIs](https://img.shields.io/badge/APIs-purple)
+![Game Dev](https://img.shields.io/badge/Game_Dev-blue)
+![Machine Learning](https://img.shields.io/badge/Machine_Learning-orange)
+
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=KaiXtr&show_icons=true&theme=tokyonight)](https://github.com/anuraghazra/github-readme-stats)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=KaiXtr&theme=tokyonight&layout=donut)](https://github.com/anuraghazra/github-readme-stats)
 
