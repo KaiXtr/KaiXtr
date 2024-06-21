@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+    background-color: rgb(33, 28, 37);
+    font-family: "Montserrat", Helvetica, sans-serif;
+    line-height: 26pt;
+    margin: 0px;
+}
+
+a, a:link, a:visited {
+    color: rgb(225, 178, 243);
+    text-decoration: none;
+    transition-duration: .2s;
+}
+
+a:hover, a:active, a:focus {
+    color: rgb(33, 28, 37);
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+}
+
+header h1 {
+    text-align: left;
+    margin: 10vh 5vw 5vh 5vw;
+}
+
+header h1 strong#header-h1-text {
+    width: 100%;
+    position: relative;
+}
+
+header h1 strong#header-h1-text div {
+    visibility: visible;
+    white-space: nowrap;
+    z-index: -1;
+}
+
+header h1 strong#header-h1-text div.header-h1-text-onchange1 {
+    animation: header-h1-onchange1 1s forwards;
+    transform: translateY(-50px);
+}
+
+header h1 strong#header-h1-text div.header-h1-text-onchange2 {
+    animation: header-h1-onchange2 1s forwards;
+    transform: translateY(0px);
+}
+
+@keyframes header-h1-onchange1 {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+
+@keyframes header-h1-onchange2 {
+    0% {
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+    100% {
+        transform: translateY(50px);
+        opacity: 0%;
+    }
+}
+
+header ul.menu-bar {
+    background-color: rgb(127, 88, 143);
+    text-align: center;
+    z-index: 5;
+}
+
+ul.menu-bar li {
+    color: rgb(225, 178, 243);
+    font-weight: bold;
+    list-style: none;
+    margin: 5px 2vw 5px 2vw;
+    display: inline-block;
+}
+
+ul.menu-bar li.activate-hidden-menu ul.hidden-menu {
+    background-color: rgb(225, 178, 243);
+    padding: 0px;
+    transition: .2s;
+    position: fixed;
+    display: none;
+}
+
+ul.menu-bar li.activate-hidden-menu ul.hidden-menu li {
+    text-align: left;
+    display: block;
+}
+
+ul.menu-bar li.activate-hidden-menu ul.hidden-menu li a {
+    color: white;
+}
+
+ul.menu-bar li.activate-hidden-menu ul.hidden-menu li a:hover {
+    color: rgb(33, 28, 37);
+}
+
+ul.menu-bar li.activate-hidden-menu:hover ul.hidden-menu {
+    display: block;
+}
+
+nav {
+    background-color: rgb(53, 42, 63);
+    border-radius: 3vw;
+    margin: 5vh 15vw 5vh 15vw;
+    padding: 5vh 5vw 5vh 5vw;
+}
+
+nav p {
+    text-align: justify;
+}
+
+div.coluna {
+    display: inline-block;
+}
+
+img.img-thumbnail {
+    max-height: 20vh;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    margin: 10vh 0px 10vh 0px;
+}
+
+button#back-to-top-button {
+    color: white;
+    font-weight: bold;
+    background-color: rgb(53, 42, 63);
+    border: none;
+    border-radius: 20px;
+    left: 4vw;
+    bottom: 2vh;
+    padding: 10px;
+    position: fixed;
+}
