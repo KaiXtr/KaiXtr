@@ -103,6 +103,41 @@
     <nav id="skills">
         <h2>Competências</h2>
         <div class="coluna">
+            <ul>
+                <li>
+                    <i class="fa-brands fa-xl fa-python"></i>
+                    <strong>Python:</strong>
+                </li>
+                <li>
+                    <i class="fa-brands fa-xl fa-js"></i>
+                    <strong>Javascript:</strong>
+                </li>
+                <li>
+                    <i class="fa-brands fa-xl fa-django"></i>
+                    <strong>Django:</strong>
+                </li>
+            </ul>
+        </div>
+        <div class="coluna">
+            <ul>
+                <li>
+                    <i class="fa-brands fa-xl fa-html5"></i>
+                    <strong>HTML5:</strong>
+                </li>
+                <li>
+                    <i class="fa-brands fa-xl fa-css3"></i>
+                    <strong>CSS3:</strong>
+                </li>
+                <li>
+                    <i class="fa-brands fa-xl fa-rails"></i>
+                    <strong>Rails:</strong>
+                </li>
+            </ul>
+        </div>
+        <br>
+
+
+        <div class="coluna">
             <h3>Soft Skills</h3>
             <ul>
                 <li>Lidar com pessoas de diversas idades</li>
@@ -172,18 +207,20 @@
             </ul>
         </div>
     </nav>
-    <nav>
+    <nav class="card-container">
         <h2>Meus Projetos</h2>
-        <div>
+        <div class="project-card" onclick="showProjectCard(this)">
             <img alt="Núcleo de Apoio a Empreendimentos">
             <h3>Núcleo de Apoio a Empreendimentos</h3>
+            <span>Descrição</span>
             <p>
                 Lorem ipsum.
             </p>
         </div>
-        <div>
+        <div class="project-card" onclick="showProjectCard(this)">
             <img alt="Literledge">
             <h3>Literledge</h3>
+            <span>Descrição</span>
             <p>
                 Foi inicialmente criado em 2020, durante a pandemia de COVID-19, para aprender a desenvolver websites dinâmicos em PHP, servidores Apache e com comunicação à banco de dados MySQL.
             </p>
@@ -191,86 +228,98 @@
                 Posteriormente, o projeto é retomado para a criação de um website PHP com o framework Laravel.
             </p>
         </div>
-        <div>
-            <img alt="Literledge">
+        <div class="project-card" onclick="showProjectCard(this)">
+            <img alt="Ghost Comics">
             <h3>Ghost Comics</h3>
+            <span>Descrição</span>
             <p>
                 Projeto desenvolvido no curso de Tecnologia em Sistemas para Internet no Instituto Federal de Brasília.
             </p>
         </div>
-        <div>
+        <div class="project-card" onclick="showProjectCard(this)">
             <img alt="Website Cobracoral">
             <h3>Website Cobracoral</h3>
+            <span>Descrição</span>
             <p>
                 Lorem ipsum.
             </p>
         </div>
-        <div>
+        <div class="project-card" onclick="showProjectCard(this)">
             <img alt="Projeto Politeia">
             <h3>Projeto Politeia</h3>
+            <span>Descrição</span>
             <p>
                 Lorem ipsum.
             </p>
         </div>
-        <div>
+        <div class="project-card" onclick="showProjectCard(this)">
             <img alt="Cobracoral">
             <h3>Cobracoral</h3>
+            <span>Descrição</span>
             <p>
                 Lorem ipsum.
             </p>
         </div>
-        <div>
+        <div class="project-card" onclick="showProjectCard(this)">
             <img alt="Bashsays">
             <h3>Bashsays</h3>
+            <span>Descrição</span>
             <p>
                 Lorem ipsum.
             </p>
         </div>
-        <div>
+        <div class="project-card" onclick="showProjectCard(this)">
             <img alt="Primateria">
             <h3>Primateria</h3>
+            <span>Descrição</span>
             <p>
                 Lorem ipsum.
             </p>
         </div>
-        <div>
+        <div class="project-card" onclick="showProjectCard(this)">
             <img alt="Manipulador de Imagem">
             <h3>Manipulador de Imagem</h3>
+            <span>Descrição</span>
             <p>
                 Lorem ipsum.
             </p>
         </div>
-        <div>
+        <div class="project-card" onclick="showProjectCard(this)">
             <img alt="Calendário de Vestibulares">
             <h3>Calendário de Vestibulares</h3>
+            <span>Descrição</span>
             <p>
                 Lorem ipsum.
             </p>
         </div>
-        <div>
+        <div class="project-card" onclick="showProjectCard(this)">
             <img alt="Minha Honesta Reação">
             <h3>Minha Honesta Reação</h3>
+            <span>Descrição</span>
             <p>
                 Lorem ipsum.
             </p>
         </div>
-        <div>
+        <div class="project-card" onclick="showProjectCard(this)">
             <img alt="Frederico Bot">
             <h3>Frederico Bot</h3>
+            <span>Descrição</span>
             <p>
                 Lorem ipsum.
             </p>
         </div>
-        <div>
+        <div class="project-card" onclick="showProjectCard(this)">
             <img alt="Hiko Labyrinth">
             <h3>Hiko Labyrinth</h3>
+            <span>Descrição</span>
             <p>
                 Lorem ipsum.
             </p>
         </div>
-        <div>
+        <div class="project-card" onclick="showProjectCard(this)">
             <img alt="Bashsays">
             <h3>Bashsays</h3>
+            <span>Descrição</span>
             <p>
                 Lorem ipsum.
             </p>
@@ -278,31 +327,46 @@
     </nav>
     <nav id="contato">
         <h2>Entre em contato!</h2>
-        <p>
-            <i class="fa fa-envelope"></i>
-            <strong>Email:</strong>
-            ewertonmatheus2113@gmail.com
-        </p>
-        <p>
-            <i class="fa fa-github"></i>
-            <strong>GitHub:</strong>
-            <a href="https://github.com/KaiXtr" target="_blank">KaiXtr</a>
-        </p>
-        <p>
-            <i class="fa fa-linkedin"></i>
-            <strong>LinkedIn:</strong>
-            <a href="https://linkedin.com/bramosewerton" target="_blank">bramosewerton</a>
-        </p>
-        <p>
-            <i class="fa fa-whatsapp"></i>
-            <strong>Telefone:</strong>
-            +55 (61) 99464-0527
-        </p>
+        <div class="coluna contato-coluna">
+            <p>
+                <i class="fa fa-envelope"></i>
+                <strong>Email:</strong>
+                ewertonmatheus2113@gmail.com
+            </p>
+            <p>
+                <i class="fa fa-github"></i>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/KaiXtr" target="_blank">KaiXtr</a>
+            </p>
+            <p>
+                <i class="fa fa-linkedin"></i>
+                <strong>LinkedIn:</strong>
+                <a href="https://linkedin.com/bramosewerton" target="_blank">bramosewerton</a>
+            </p>
+            <p>
+                <strong>Lattes:</strong>
+                <a href="lattes.cnpq.br/2274633017966563" target="_blank">2274633017966563</a>
+            </p>
+            <p>
+                <i class="fa fa-whatsapp"></i>
+                <strong>Telefone:</strong>
+                +55 (61) 99464-0527
+            </p>
+        </div>
+        <div class="coluna contato-coluna">
+            <img class="img-thumbnail" src="qrcode.png" alt="QR Code">
+        </div>
     </nav>
     <footer>
         Ewerton Bramos - 2024
     </footer>
-    <button id="back-to-top-button">
+    <div id="show-project-card">
+        <button class="btn" onclick="closeProjectCard()">
+            <i class="fa fa-close"></i>
+        </button>
+        <div id="project-info"></div>
+    </div>
+    <button id="back-to-top-button" class="btn">
         <a href="#">
             <i class="fa fa-up-long"></i><br>
             Voltar ao topo
