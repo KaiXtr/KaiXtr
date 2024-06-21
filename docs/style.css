@@ -77,6 +77,8 @@ header h1 strong#header-h1-text div.header-h1-text-onchange2 {
 
 header ul.menu-bar {
     background-color: rgb(127, 88, 143);
+    border-radius: 20px;
+    margin: 0px 15vw 0px 15vw;
     text-align: center;
     z-index: 5;
 }
@@ -117,9 +119,10 @@ ul.menu-bar li.activate-hidden-menu:hover ul.hidden-menu {
 
 ul.menu-bar.menu-bar-float {
     background-color: rgb(127, 88, 143, 0.2);
+    border-radius: 0px;
     width: 100%;
     top: 0px;
-    margin-top: 0px;
+    margin: 0px;
     transition: .2s;
     position: fixed;
 }
@@ -158,6 +161,16 @@ nav.p-escondendo {
     100% {transform: translateX(-10px); opacity: 10%;}
 }
 
+div.bottom-border {
+    padding-bottom: 5vh;
+    margin-bottom: 3vh;
+    border-bottom: 2px dashed rgb(225, 178, 243);
+}
+
+div.colunas-container {
+    display: flex;
+}
+
 div.coluna {
     vertical-align: top;
     display: inline-block;
@@ -165,6 +178,21 @@ div.coluna {
 
 img.img-thumbnail {
     max-height: 20vh;
+    display: inline-block;
+}
+
+img.foto-perfil {
+    max-width: 20vw;
+    border: 2px solid rgb(225, 178, 243);
+    border-radius: 100%;
+    border-style: dashed;
+    padding: 5px;
+    transition: .2s;
+    margin-left: 3vw;
+}
+
+img.foto-perfil:hover {
+    transform: scale(1.05);
 }
 
 div.contato-coluna {
@@ -183,9 +211,9 @@ nav.card-container {
 div.project-card {
     background-color: rgb(53, 42, 63);
     border-radius: 20px;
-    padding: 3vw;
+    padding: 0px;
     margin: 10px;
-    max-width: 25vw;
+    max-width: 30vw;
     display: inline-block;
     transition: .2s;
     vertical-align: top;
@@ -194,6 +222,15 @@ div.project-card {
 div.project-card:hover {
     transform: scale(1.05);
     cursor: pointer;
+}
+
+div.project-card img.project-card-img {
+    border-radius: 20px 20px 0px 0px;
+    max-width: 30vw;
+}
+
+div.project-card div.project-card-content {
+    padding: 1vh 3vw 5vh 3vw;
 }
 
 div.project-card p {
@@ -215,8 +252,13 @@ div#show-project-card {
 div#show-project-card div#project-info {
     background-color: rgb(53, 42, 63);
     border-radius: 20px;
+    max-height: 80vh;
     margin: 10vh 5vw 10vh 5vw;
     padding: 5vh 5vw 5vh 5vw;
+}
+
+div#show-project-card div#project-info img {
+    max-height: 50vh;
 }
 
 footer {

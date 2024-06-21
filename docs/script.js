@@ -1,20 +1,30 @@
-const headerStrings = [
+let headerStrings = [
     "bacana", "desenvolvedor Front-end", "analista de requisitos",
-    "gestor de projetos", "desenvolvedor de jogos", "Desenvolvedor Back-end",
+    "gestor de projetos", "desenvolvedor de jogos", "desenvolvedor Back-end",
     "educador", "professor particular", "designer UI/UX", "desenvolvedor DevOps",
     "engenheiro de dados", "cientista de dados", "programador Python",
     "programador TypeScript", "programador PHP", "programador R", "programador Ruby",
-    "programador C", "baterista de banda de punk rock", "escritor",
-    "editor de vídeo"
+    "programador C", "baterista de banda de punk rock", "escritor", "paraense",
+    "editor de vídeo", "pesquisador", "desenvolvedor Full-stack", "monitor",
+    "estudante de federal", "freelancer", "proativo", "prestativo", "paciente", "compreensivo",
+    "curioso", "autodidata", "motion designer", "ilustrador", "operador de sistemas",
+    "voluntário", "concurseiro", "poeta", "pisciano", "bem humorado", "mente aberta",
+    "programador Rust", "usuário Linux", "usuário Fedora", "moderador da Wikipedia",
+    "fã de Pink Floyd", "empreendedor", "simpatizante do Open Source", "hacker"
 ]
+
+let newHeader = []
 
 function headerTransition() {
     let headerH1Text = document.getElementById("header-h1-text");
     let oldString = headerH1Text.innerHTML;
-    let escolha = oldString;
+    let escolha = headerStrings[Math.floor(Math.random() * headerStrings.length)];
+    newHeader.push(escolha);
+    headerStrings.splice(headerStrings.indexOf(escolha),1);
 
-    while (escolha === oldString){
-        escolha = headerStrings[Math.floor(Math.random() * headerStrings.length)];
+    if (headerStrings.length === 0) {
+        headerStrings = newHeader;
+        newHeader = [];
     }
 
     headerH1Text.innerHTML = escolha;
