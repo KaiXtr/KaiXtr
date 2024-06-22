@@ -131,6 +131,18 @@ ul.menu-bar.menu-bar-float:hover {
     background-color: rgba(127, 88, 143, 0.8);
 }
 
+div#projects-slide {
+    margin: 10vh 0px 0px 0px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    align-items: center;
+}
+
+div#projects-slide img.projects-slide-img {
+    height: 50vh;
+    margin-left: 5vw;
+}
+
 nav {
     background-color: rgb(53, 42, 63);
     border-radius: 3vw;
@@ -196,8 +208,11 @@ div.skill-bar div.skill-bar-meter {
     top: 0px;
     left: 0px;
     transform-origin: 0px 0px;
-    animation: skill-bar-meter-animation 1s forwards ease-in-out;
     z-index: 1;
+}
+
+nav.p-mostrando div.skill-bar div.skill-bar-meter {
+    animation: skill-bar-meter-animation 1s forwards ease-in-out;
 }
 
 @keyframes skill-bar-meter-animation {
@@ -234,6 +249,7 @@ div.contato-coluna img.img-thumbnail {
 }
 
 nav.card-container {
+    text-align: center;
     background: none;
     padding: 0px;
 }
@@ -241,12 +257,14 @@ nav.card-container {
 div.project-card {
     background-color: rgb(53, 42, 63);
     border-radius: 20px;
+    text-align: left;
     padding: 0px;
     margin: 10px;
     max-width: 30vw;
     display: inline-block;
     transition: .2s;
     vertical-align: top;
+    white-space: wrap;
 }
 
 div.project-card:hover {
@@ -257,11 +275,14 @@ div.project-card:hover {
 div.project-card img.project-card-img {
     border-radius: 20px 20px 0px 0px;
     max-width: 30vw;
-    width: fit-content;
 }
 
 div.project-card div.project-card-content {
     padding: 1vh 3vw 5vh 3vw;
+}
+
+div.project-card div.project-card-content h3 {
+    line-height: 18pt;
 }
 
 div.project-card div.project-card-content span {
@@ -388,6 +409,12 @@ div#show-project-card button.btn {
 
     div.contato-coluna {
         line-height: 12pt;
+    }
+    
+    div#show-project-card div#project-info h3 {
+        font-size: 18pt;
+        line-height: 30pt;
+        margin-bottom: 0px;
     }
 
     button#back-to-top-button {

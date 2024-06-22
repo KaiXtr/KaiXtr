@@ -236,9 +236,36 @@ function setUpSkillBars(){
     }
 }
 
+function setUpProjectsSlide() {
+    let imgs = [
+        "bashsays.gif", "NAE1.gif", "imgmani.png", "cobracoral.gif", "hiko.jpg",
+        "moira-database.png", "primateria.gif", "projetopoliteia1.png", "calendario.png",
+        "bashsays.gif", "NAE1.gif"
+    ]
+    let slide = document.getElementById("projects-slide");
+
+    for (let i=0; i<imgs.length; i++) {
+        let imgEL = document.createElement("img");
+        imgEL.src = "img/" + imgs[i];
+        imgEL.classList.add("projects-slide-img");
+        slide.appendChild(imgEL);
+    }
+    setTimeout(moveSlide,10);
+}
+
+function moveSlide() {
+    let slide = document.getElementById("projects-slide");
+    if (slide.scrollLeft > slide.scrollWidth - window.innerWidth) {
+        slide.scroll(0,0);
+    }
+    slide.scrollBy(slide.getBoundingClientRect().left + 1,0);
+    setTimeout(moveSlide,20);
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(headerTransition,1000)
     setTimeout(generateParticle,1000)
+    setUpProjectsSlide();
     setUpSkillBars();
 });
 
