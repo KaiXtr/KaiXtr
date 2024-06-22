@@ -163,7 +163,6 @@ function checkMenuBar() {
     let menuBar = document.getElementsByClassName("menu-bar")[0];
     let pos = menuBar.getBoundingClientRect().height + 80;
     
-    console.log(pos.bottom)
     if (menuBar.classList.contains("menu-bar-float")) {
         if (this.scrollY < pos) {
             menuBar.classList.remove("menu-bar-float");
