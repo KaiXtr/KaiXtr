@@ -12,13 +12,13 @@ body {
     margin: 0px;
 }
 
-a, a:link, a:visited {
+a, a:link, a:visited, a:active {
     color: rgb(225, 178, 243);
     text-decoration: none;
     transition-duration: .2s;
 }
 
-a:hover, a:active, a:focus {
+a:hover, a:focus {
     color: rgb(33, 28, 37);
     text-decoration: none;
 }
@@ -257,13 +257,20 @@ div.project-card:hover {
 div.project-card img.project-card-img {
     border-radius: 20px 20px 0px 0px;
     max-width: 30vw;
+    width: fit-content;
 }
 
 div.project-card div.project-card-content {
     padding: 1vh 3vw 5vh 3vw;
 }
 
-div.project-card p {
+div.project-card div.project-card-content span {
+    font-size: 10pt;
+    line-height: 14pt;
+    display: block;
+}
+
+div.project-card p, div.project-card ul {
     display: none;
 }
 
@@ -282,14 +289,20 @@ div#show-project-card {
 div#show-project-card div#project-info {
     background-color: rgb(53, 42, 63);
     border-radius: 20px;
-    max-height: 80vh;
+    max-height: 70vh;
     margin: 10vh 5vw 10vh 5vw;
     padding: 5vh 5vw 5vh 5vw;
+    overflow-y: scroll;
 }
 
 div#show-project-card div#project-info img {
+    transition: .2s;
     max-width: 80vw;
     max-height: 50vh;
+}
+
+div#show-project-card div#project-info h3 {
+    font-size: 32pt;
 }
 
 footer {

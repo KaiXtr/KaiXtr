@@ -177,7 +177,7 @@ function checkMenuBar() {
 
 function showProjectCard(el){
     let showEl = document.getElementById("show-project-card");
-    let showElInfo = document.getElementById("project-info").innerHTML = el.innerHTML;
+    document.getElementById("project-info").innerHTML = el.innerHTML;
     showEl.style.display = "block";
 }
 
