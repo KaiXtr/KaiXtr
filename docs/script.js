@@ -15,6 +15,72 @@ let headerStrings = [
 
 let newHeader = []
 
+const hardSkills = {
+    "HTML5": 9,
+    "CSS3": 10,
+    "Javascript": 8,
+    "Design UI/UX": 9,
+    "Angular": 7,
+    "React": 6,
+    "Python": 10,
+    "Pandas": 8,
+    "Django": 8,
+    "Java": 7,
+    "Spring": 6,
+    "PHP": 7,
+    "Laravel": 6,
+    "Ruby": 5,
+    "Rails": 4,
+    "R": 7,
+    "Scrum": 8,
+    "Agile": 8,
+    "ITIL v4": 7,
+    "Git": 9,
+    "DevOps": 8,
+    "CI/CD": 8,
+    "REST": 8,
+    "Mainframes": 6,
+    "COBOL": 7,
+    "Docker": 7,
+    "Kubernetes": 6,
+    "Cloud Native": 7,
+    "Estatística": 9,
+    "Cultura Maker": 8,
+    "STEAM": 9,
+    "Metodologias ativas": 8,
+    "Arduino": 7,
+    "Blender": 6,
+    "Adobe Creative Cloud": 6,
+    "Microsoft 365": 8,
+    "Linux": 10,
+    "Shell Script": 8,
+    "Red Hat Enterprise Linux": 7,
+    "Windows NT": 10,
+    "Virtualização": 9,
+    "MySQL": 10,
+    "Oracle DB": 7,
+    "PostgreSQL": 8,
+    "SQL Server": 8,
+    "Power BI": 7,
+    "Big Data": 6,
+    "Machine Learning": 6,
+}
+
+const softSkills = {
+    "Liderança": 8,
+    "Atitude positiva": 9,
+    "Criatividade": 10,
+    "Proatividade": 9,
+    "Profissionalismo": 9,
+    "Trabalho sob pressão": 8,
+    "Prestatividade": 10,
+    "Inteligência emocional": 9,
+    "Autonomia": 9,
+    "Responsabilidade": 9,
+    "Trabalho em equipe": 9,
+    "Pensamento crítico": 10,
+}
+
 function headerTransition() {
     let headerH1Text = document.getElementById("header-h1-text");
     let oldString = headerH1Text.innerHTML;
@@ -121,9 +187,60 @@ function closeProjectCard(){
     showEl.style.display = "none";
 }
 
+function setUpSkillBars(){
+    let list;
+    let coluna;
+    let skills;
+    let skillsDiv;
+    let skillsKeys;
+
+    for (let y=0; y<2; y++){
+        if (y == 0){
+            skills = hardSkills;
+            skillsDiv = document.getElementById("hard-skills-container");
+            skillsKeys = Object.keys(hardSkills);
+        }
+        if (y == 1){
+            skills = softSkills;
+            skillsDiv = document.getElementById("soft-skills-container");
+            skillsKeys = Object.keys(softSkills);
+        }
+        for (let i=0; i<skillsKeys.length + 1; i++) {
+            if (i % Math.floor(skillsKeys.length/3) === 0){
+                if (i > 0)
+                    skillsDiv.appendChild(coluna);
+                if (i == skillsKeys.length)
+                    break
+                coluna = document.createElement("div");
+                coluna.classList.add("coluna");
+                coluna.classList.add("skill-coluna");
+                list = document.createElement("ul");
+                coluna.appendChild(list);
+            }
+            let listItem = document.createElement("li");
+
+            let barraTexto = document.createElement("strong");
+            barraTexto.innerHTML = skillsKeys[i] + ":";
+            listItem.appendChild(barraTexto);
+
+            let barra = document.createElement("div");
+            barra.classList.add("skill-bar");
+
+            let meter = document.createElement("div");
+            meter.classList.add("skill-bar-meter");
+            meter.style.width = skills[skillsKeys[i]] + "vw";
+
+            barra.appendChild(meter);
+            listItem.appendChild(barra);
+            list.appendChild(listItem);
+        };
+    }
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(headerTransition,1000)
     setTimeout(generateParticle,1000)
+    setUpSkillBars();
 });
 
 window.addEventListener("scroll", function(event) {
