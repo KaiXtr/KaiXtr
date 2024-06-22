@@ -81,6 +81,14 @@ const softSkills = {
     "Pensamento crítico": 10,
 }
 
+const langSkills = {
+    "Inglês": 9,
+    "Espanhol": 8,
+    "Francês": 4
+}
+
+const skillRate = ["Não tão bom", "Bom", "Competente", "Excelente", "Especialidade"]
+
 function headerTransition() {
     let headerH1Text = document.getElementById("header-h1-text");
     let oldString = headerH1Text.innerHTML;
@@ -193,7 +201,7 @@ function setUpSkillBars(){
     let skillsDiv;
     let skillsKeys;
 
-    for (let y=0; y<2; y++){
+    for (let y=0; y<3; y++){
         if (y == 0){
             skills = hardSkills;
             skillsDiv = document.getElementById("hard-skills-container");
@@ -203,6 +211,11 @@ function setUpSkillBars(){
             skills = softSkills;
             skillsDiv = document.getElementById("soft-skills-container");
             skillsKeys = Object.keys(softSkills);
+        }
+        if (y == 2){
+            skills = langSkills;
+            skillsDiv = document.getElementById("lang-skills-container");
+            skillsKeys = Object.keys(langSkills);
         }
         for (let i=0; i<skillsKeys.length + 1; i++) {
             if (i % Math.floor(skillsKeys.length/3) === 0){
@@ -229,7 +242,12 @@ function setUpSkillBars(){
             meter.classList.add("skill-bar-meter");
             meter.style.width = skills[skillsKeys[i]] + "vw";
 
+            let hint = document.createElement("div");
+            hint.classList.add("skill-bar-hint");
+            hint.innerHTML = skillRate[Math.ceil(skills[skillsKeys[i]]/2) - 1]
+
             barra.appendChild(meter);
+            barra.appendChild(hint);
             listItem.appendChild(barra);
             list.appendChild(listItem);
         };
