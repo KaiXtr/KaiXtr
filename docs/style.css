@@ -241,6 +241,7 @@ nav.p-mostrando div.skill-bar div.skill-bar-meter {
 img.img-thumbnail {
     max-height: 20vh;
     display: inline-block;
+    pointer-events: none;
 }
 
 img.foto-perfil {
@@ -251,6 +252,7 @@ img.foto-perfil {
     padding: 5px;
     transition: .2s;
     margin-left: 3vw;
+    pointer-events: none;
 }
 
 img.foto-perfil:hover {
@@ -293,6 +295,7 @@ div.project-card:hover {
 div.project-card img.project-card-img {
     border-radius: 20px 20px 0px 0px;
     max-width: 30vw;
+    pointer-events: none;
 }
 
 div.project-card div.project-card-content {
