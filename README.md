@@ -50,15 +50,18 @@ Me chamo Ewerton Bramos e adoro tecnologia desde que me entendo por gente.
   <img align="center" alt="KaiXtr-Typescript" height="50" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"/>
   <img align="center" alt="KaiXtr-AngularJs" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg">
   <img align="center" alt="KaiXtr-Jquery" height="50" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jquery/jquery-original.svg"/>
-  <img align="center" alt="KaiXtr-NodeJs" height="50" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"/>
   <img align="center" alt="KaiXtr-Npm" height="50" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/npm/npm-original-wordmark.svg"/>
   <img align="center" alt="KaiXtr-Electron" height="50" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/electron/electron-original.svg"/>
   <img align="center" alt="KaiXtr-Ruby" height="50" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg"/>
 
   <h2>Desenvolvimento Back-end</h2>
+  <img align="center" alt="KaiXtr-NodeJs" height="50" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"/>
   <img align="center" alt="KaiXtr-Java" height="50" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"/>
   <img align="center" alt="KaiXtr-Spring" height="50" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg"/>
+  <img align="center" alt="KaiXtr-Maven" height="50" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/maven/maven-original.svg"/>
+  <img align="center" alt="KaiXtr-Apache" height="50" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/apache/apache-original.svg"/>
   <img align="center" alt="KaiXtr-PHP" height="50" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"/>
+  <img align="center" alt="KaiXtr-Laravel" height="50" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"/>
   <img align="center" alt="KaiXtr-Django" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-plain.svg">
   <img align="center" alt="KaiXtr-Docker" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg">
   <img align="center" alt="KaiXtr-Kubernetes" height="50" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain-wordmark.svg"/>
@@ -69,6 +72,7 @@ Me chamo Ewerton Bramos e adoro tecnologia desde que me entendo por gente.
   <img align="center" alt="KaiXtr-MongoDB" height="50" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"/>
   <img align="center" alt="KaiXtr-PostgreSQL" height="50" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg"/>
   <img align="center" alt="KaiXtr-Sqlite" height="50" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sqlite/sqlite-original.svg"/>
+  <img align="center" alt="KaiXtr-Redis" height="50" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg"/>
   
   <h2>Sistemas Operacionais</h2>
   <img align="center" alt="KaiXtr-Linux" height="50" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"/>
