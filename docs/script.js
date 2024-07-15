@@ -15,79 +15,35 @@ let headerStrings = [
 
 let newHeader = []
 
-const hardSkills = {
-    "HTML5": 9,
-    "CSS3": 10,
-    "Javascript": 8,
-    "Design UI/UX": 9,
-    "Angular": 7,
-    "React": 6,
-    "Python": 10,
-    "Pandas": 8,
-    "Django": 8,
-    "Java": 7,
-    "Spring": 6,
-    "PHP": 7,
-    "Laravel": 6,
-    "Ruby": 5,
-    "Rails": 4,
-    "R": 7,
-    "Scrum": 8,
-    "Agile": 8,
-    "ITIL v4": 7,
-    "Git": 9,
-    "DevOps": 8,
-    "CI/CD": 8,
-    "REST": 8,
-    "Mainframes": 6,
-    "COBOL": 7,
-    "Docker": 7,
-    "Kubernetes": 6,
-    "Cloud Native": 7,
-    "Estatística": 9,
-    "Cultura Maker": 8,
-    "STEAM": 9,
-    "Metodologias ativas": 8,
-    "Arduino": 7,
-    "Blender": 6,
-    "Adobe Creative Cloud": 6,
-    "Microsoft 365": 8,
-    "Linux": 10,
-    "Shell Script": 8,
-    "Red Hat Enterprise Linux": 7,
-    "Windows NT": 10,
-    "Virtualização": 9,
-    "MySQL": 10,
-    "Oracle DB": 7,
-    "PostgreSQL": 8,
-    "SQL Server": 8,
-    "Power BI": 7,
-    "Big Data": 6,
-    "Machine Learning": 6,
+const skillRate = ["Em aprendizado", "Competente", "Bom", "Excelente", "Especialidade"]
+
+let hardSkills = {};
+let softSkills = {};
+let langSkills = {};
+
+function readTextFile(file, callback) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.overrideMimeType("application/json");
+    rawFile.open("GET", file, true);
+    rawFile.onreadystatechange = function() {
+        if (rawFile.readyState === 4 && rawFile.status == "200") {
+            callback(rawFile.responseText);
+        }
+    }
+    rawFile.send(null);
 }
 
-const softSkills = {
-    "Liderança": 8,
-    "Atitude positiva": 9,
-    "Criatividade": 10,
-    "Proatividade": 9,
-    "Profissionalismo": 9,
-    "Trabalho sob pressão": 8,
-    "Prestatividade": 10,
-    "Inteligência emocional": 9,
-    "Autonomia": 9,
-    "Responsabilidade": 9,
-    "Trabalho em equipe": 9,
-    "Pensamento crítico": 10,
-}
+function loadJsonData() {
+    readTextFile("data.json", function(data) {
+        let jsonFile = JSON.parse(data)
 
-const langSkills = {
-    "Inglês": 9,
-    "Espanhol": 8,
-    "Francês": 4
+        hardSkills = jsonFile.hardSkills;
+        softSkills = jsonFile.softSkills;
+        langSkills = jsonFile.langSkills;
+    
+        setUpSkillBars();
+    })
 }
-
-const skillRate = ["Não tão bom", "Bom", "Competente", "Excelente", "Especialidade"]
 
 function headerTransition() {
     let headerH1Text = document.getElementById("header-h1-text");
@@ -240,7 +196,11 @@ function setUpSkillBars(){
 
             let meter = document.createElement("div");
             meter.classList.add("skill-bar-meter");
-            meter.style.width = skills[skillsKeys[i]] + "vw";
+
+            if (this.innerWidth < 800)
+                meter.style.width = (skills[skillsKeys[i]] * 6.5) + "vw";
+            else
+                meter.style.width = skills[skillsKeys[i]] + "vw";
 
             let hint = document.createElement("div");
             hint.classList.add("skill-bar-hint");
@@ -281,10 +241,10 @@ function moveSlide() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+    loadJsonData();
     setTimeout(headerTransition,1000)
     setTimeout(generateParticle,1000)
     setUpProjectsSlide();
-    setUpSkillBars();
 });
 
 window.addEventListener("scroll", function(event) {
