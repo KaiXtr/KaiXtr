@@ -1,0 +1,113 @@
+{
+    "hardSkills": {
+        "HTML5": 9,
+        "CSS3": 10,
+        "Javascript": 8,
+        "Node": 8,
+        "JSON": 9,
+        "XML": 10,
+        "Design UI/UX": 9,
+        "Bootstrap": 9,
+        "Angular": 7,
+        "React": 6,
+        "Vue": 6,
+
+        "Python": 10,
+        "Pandas": 8,
+        "Qt": 8,
+        "Django": 8,
+
+        "Java EE": 7,
+        "Maven": 9,
+        "Spring": 6,
+
+        "PHP": 7,
+        "Laravel": 6,
+
+        "Ruby": 5,
+        "Rails": 4,
+
+        "Flutter": 6,
+        "Android": 6,
+        "Ionic": 4,
+
+        "R": 7,
+        "Haskell": 5,
+        "Lisp": 4,
+
+        "Scrum": 8,
+        "Agile": 8,
+        "ITIL v4": 7,
+        "PMBOK": 7,
+        "COBIT": 6,
+        "Compliance": 6,
+
+        "Git": 9,
+        "DevOps": 8,
+        "CI/CD": 8,
+        "Jenkins": 7,
+        "Ansible": 7,
+        "REST": 8,
+
+        "Mainframes": 6,
+        "COBOL": 7,
+        "IBM z/OS": 7,
+
+        "LXC": 8,
+        "Docker": 8,
+        "Kubernetes": 6,
+        "Cloud Native": 7,
+
+        "Estatística": 9,
+
+        "Cultura Maker": 8,
+        "STEAM": 9,
+        "Metodologias ativas": 8,
+        "Arduino": 7,
+        "Blender": 6,
+        "Adobe Creative Cloud": 6,
+        "Microsoft 365": 8,
+
+        "Linux": 10,
+        "Minix": 7,
+        "BSD": 6,
+        "Shell Script": 8,
+        "Red Hat Enterprise Linux": 7,
+        "Windows NT": 10,
+        "Virtualização": 9,
+        "VMware": 7,
+
+        "MySQL": 10,
+        "Oracle DB": 7,
+        "PostgreSQL": 8,
+        "SQL Server": 8,
+        "Mongo DB": 8,
+        "Redis": 8,
+
+        "Power BI": 7,
+        "Big Data": 6,
+        "Machine Learning": 6,
+        "Mineração de dados": 6,
+        "Sistemas distribuídos": 6,
+        "Computação quântica": 3
+    },
+    "softSkills": {
+        "Liderança": 8,
+        "Atitude positiva": 9,
+        "Criatividade": 10,
+        "Proatividade": 9,
+        "Profissionalismo": 9,
+        "Trabalho sob pressão": 8,
+        "Prestatividade": 10,
+        "Inteligência emocional": 9,
+        "Autonomia": 9,
+        "Responsabilidade": 9,
+        "Trabalho em equipe": 9,
+        "Pensamento crítico": 10
+    },
+    "langSkills": {
+        "Inglês": 9,
+        "Espanhol": 8,
+        "Francês": 4
+    }
+}
