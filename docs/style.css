@@ -181,6 +181,7 @@ div.bottom-border {
 }
 
 div.colunas-container {
+    vertical-align: top;
     display: flex;
 }
 

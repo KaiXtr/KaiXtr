@@ -1,0 +1,121 @@
+body {
+    color: black;
+    background-color: white;
+}
+
+header ul.menu-bar, div#projects-slide,
+.header-h1-text-onchange1,
+.hide-printing, button#back-to-top-button,
+.particula, footer {
+    display: none;
+}
+
+header h1 {
+    margin: 0vh 2vw 0vh 2vw;
+}
+
+header h1.header-h1-text-onchange2 {
+    transform: translateY(0px);
+    opacity: 100%;
+}
+
+nav {
+    margin: 2vh 2vw 2vh 2vw;
+    padding: 0px;
+}
+
+nav.p-escondendo {
+    animation: none;
+    transform: translateX(0px);
+    opacity: 100%;
+}
+
+nav h3 {
+    margin: 0px;
+    font-size: 12pt;
+    line-height: 14pt;
+}
+
+div.bottom-border {
+    padding-bottom: 2vh;
+    margin-bottom: 2vh;
+}
+
+nav#quem-sou {
+    font-family: 14pt;
+    line-height: 16pt;
+}
+
+nav#quem-sou img.foto-perfil {
+    width: 15vw;
+}
+
+nav#skills div.skill-bar-hint {
+    display: inline-block;
+}
+
+nav#skills div.skill-bar-meter {
+    display: none;
+}
+
+nav#skills div.skill-bar-hint {
+    background: none;
+    font-weight: normal;
+    opacity: 100%;
+    display: inline-block;
+}
+
+nav#skills div.coluna ul {
+    padding-left: 2vw;
+}
+
+nav#skills div.coluna ul li {
+    font-size: 10pt;
+    line-height: 12pt;
+}
+
+nav#skills div.other-skills div.coluna ul {
+    padding-left: 2vw;
+}
+
+nav#skills div.other-skills div.coluna ul li {
+    font-size: 10pt;
+    line-height: 12pt;
+}
+
+nav#formacao img.img-thumbnail {
+    display: none;
+}
+
+nav#formacao ul {
+    padding-left: 2vw;
+}
+
+nav#formacao ul li {
+    font-size: 10pt;
+    line-height: 12pt;
+}
+
+nav.card-container div.project-card {
+    margin: 0px;
+}
+
+nav.card-container div.project-card img.project-card-img {
+    border-radius: 0px;
+}
+
+nav.card-container div.project-card div.project-card-content {
+    padding: 1vh 1vw 1vh 1vw;
+}
+
+nav.card-container div.project-card div.project-card-content h3 {
+    margin-top: 1px;
+}
+
+nav#contato p {
+    margin: 0px;
+}
+
+nav#contato img.img-thumbnail {
+    width: 20vw;
+}

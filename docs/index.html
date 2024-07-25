@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" moznomarginboxes mozdisallowselectionprint>
 <head>
     <title>Meu nome é Ewerton Bramos</title>
     <meta charset="UTF-8">
@@ -7,6 +7,7 @@
     <meta name="description" content="Portifólio de Ewerton Bramos">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" media="print" type="text/css" href="printing.css">
     <script type="text/javascript" src="script.js"></script>
     <script src="https://kit.fontawesome.com/597fea8ed7.js" crossorigin="anonymous"></script>
 </head>
@@ -42,7 +43,7 @@
             </li>
         </ul>
     </header>
-    <nav>
+    <nav class="hide-printing">
         <h1>Como eu fiz esse site?</h1>
         <p>
             Este é um site estático feito em DHTML, ou seja, HTML, CSS e Javascript (não sou muito fã de Bootstrap, prefiro botar a mão na massa). Todo o site funciona em uma única página e utilizando 3 arquivos. Mas poderia ser feito com...
@@ -53,10 +54,13 @@
                 <li>...Laravel, como eu fiz com o site do Literledge.</li>
             </ul>
         </p>
+        <button class="btn" onclick="window.print()">
+            Imprimir site como currículo
+        </button>
     </nav>
     <div id="projects-slide"></div>
     <nav id="quem-sou">
-        <h2>Quem eu sou?</h2>
+        <h2 class="hide-printing">Quem eu sou?</h2>
         <div class="colunas-container bottom-border">
             <div class="coluna">
                 <p>
@@ -68,7 +72,7 @@
             </div>
         </div>
         <br>
-        <div class="bottom-border">
+        <div class="bottom-border hide-printing">
             <h3>Um pouco da minha história...</h3>
             <p>
                 Paraense, filho de um pai da periferia e mãe do interior, sou uma pessoa muito interessada em tudo o que tange às artes e às ciências, mesmo que não agregue diretamente em minha carreira profissional. Fora do meu âmbito acadêmico e profissional, o que de fato mais gosto de fazer é escrever, sejam contos, poemas, músicas, romances, crônicas ou ensaios. Busco conciliar meu lado criativo com as urgências e necessidades do mercado de trabalho atual, sempre em transformação e exigindo mais qualificações e adaptações.
@@ -80,7 +84,7 @@
                 Em 2022, fui palestrante no Festival Latinoamericano de Instalação de Software Livre, o Flisol DF, no mesmo ano, participei do Hackathon do PMI Universidia no parque tecnológico Biotic. Desde 2022, participo de todas as edições da Campus Party no estádio Mané Garrincha. Em 2023, participei de um hackathon cujo objetivo seria desenvolver um jogo baseado no tema “luta”, utilizando como base a engine Primateria anteriormente mencionada.
             </p>
         </div>
-        <div class="bottom-border">
+        <div class="bottom-border hide-printing">
             <h3>Curiosidades curiosas</h3>
             <p>
                 <ul>
@@ -105,25 +109,27 @@
                 </ul>
             </p>
         </div>
-        <h3>Minhas aspirações</h3>
-        <ul>
-            <li>Educação tecnológica</li>
-            <li>Psicologia e pedagogia</li>
-            <li>Aprendizado de máquina</li>
-            <li>Computação de alta performance</li>
-            <li>Computação quântica</li>
-        </ul>
+        <div class="hide-printing">
+            <h3>Minhas aspirações</h3>
+            <ul>
+                <li>Educação tecnológica</li>
+                <li>Psicologia e pedagogia</li>
+                <li>Aprendizado de máquina</li>
+                <li>Computação de alta performance</li>
+                <li>Computação quântica</li>
+            </ul>
+        </div>
     </nav>
     <nav id="skills">
         <h2>Competências</h2>
         <h3>Hard Skills</h3>
-        <div id="hard-skills-container" class="bottom-border"></div>
+        <div id="hard-skills-container hide-printing" class="bottom-border"></div>
         <h3>Soft Skills</h3>
         <div id="soft-skills-container" class="bottom-border"></div>
         <h3>Idiomas</h3>
         <div id="lang-skills-container" class="bottom-border"></div>
 
-        <div class="colunas-container">
+        <div class="colunas-container other-skills">
             <div class="coluna">
                 <h3>Interesses</h3>
                 <ul>
@@ -189,7 +195,7 @@
             </div>
         </div>
     </nav>
-    <nav id="projetos" class="card-container">
+    <nav id="projetos" class="card-container hide-printing">
         <h2>Meus Projetos</h2>
         <div id="web" class="project-card" onclick="showProjectCard(this)">
             <img class="project-card-img" src="img/NAE1.gif" alt="Núcleo de Apoio a Empreendimentos">
