@@ -89,7 +89,7 @@
         "Machine Learning": 6,
         "Mineração de dados": 6,
         "Sistemas distribuídos": 6,
-        "Computação quântica": 3
+        "Computação quântica": 2
     },
     "softSkills": {
         "Liderança": 8,
@@ -108,6 +108,9 @@
     "langSkills": {
         "Inglês": 9,
         "Espanhol": 8,
-        "Francês": 4
+        "Francês": 4,
+        "Árabe": 2,
+        "Italiano": 1,
+        "Japonês": 2
     }
 }
