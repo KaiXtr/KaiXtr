@@ -173,6 +173,7 @@ function setUpSkillBars(){
             skillsDiv = document.getElementById("lang-skills-container");
             skillsKeys = Object.keys(langSkills);
         }
+        
         for (let i=0; i<skillsKeys.length + 1; i++) {
             if (i % Math.floor(skillsKeys.length/3) === 0){
                 if (i > 0)

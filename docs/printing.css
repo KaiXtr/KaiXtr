@@ -37,13 +37,14 @@ nav h3 {
 }
 
 div.bottom-border {
-    padding-bottom: 2vh;
-    margin-bottom: 2vh;
+    border: none;
+    padding-bottom: 0px;
+    margin-bottom: 00px;
 }
 
 nav#quem-sou {
-    font-family: 14pt;
-    line-height: 16pt;
+    font-family: 10pt;
+    line-height: 13pt;
 }
 
 nav#quem-sou img.foto-perfil {
@@ -51,7 +52,8 @@ nav#quem-sou img.foto-perfil {
 }
 
 nav#skills div.skill-bar-hint {
-    display: inline-block;
+    /*display: inline-block;*/
+    display: none;
 }
 
 nav#skills div.skill-bar-meter {
