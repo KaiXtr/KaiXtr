@@ -16,6 +16,7 @@ let headerStrings = [
 let newHeader = []
 
 const skillRate = ["Em aprendizado", "Competente", "Bom", "Excelente", "Especialidade"]
+const langRate = ["Em aprendizado", "Lê bem", "Lê e escreve bem", "Lê, escreve e fala bem", "Fluente"]
 
 let hardSkills = {};
 let softSkills = {};
@@ -205,7 +206,10 @@ function setUpSkillBars(){
 
             let hint = document.createElement("div");
             hint.classList.add("skill-bar-hint");
-            hint.innerHTML = skillRate[Math.ceil(skills[skillsKeys[i]]/2) - 1]
+            if (y  == 2)
+                hint.innerHTML = langRate[Math.ceil(skills[skillsKeys[i]]/2) - 1]
+            else
+                hint.innerHTML = skillRate[Math.ceil(skills[skillsKeys[i]]/2) - 1]
 
             barra.appendChild(meter);
             barra.appendChild(hint);
