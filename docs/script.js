@@ -245,6 +245,23 @@ function moveSlide() {
     setTimeout(moveSlide,20);
 }
 
+var contatoFlipped = false;
+
+function contatoFlip() {
+    let frente = document.getElementById("contato-frente");
+    let verso = document.getElementById("contato-verso");
+
+    contatoFlipped = !contatoFlipped;
+    
+    if (contatoFlipped){
+        frente.style.animation = "flipOut .2s forwards";
+        verso.style.animation = "flipIn .2s forwards";
+    }else {
+        frente.style.animation = "flipIn .2s forwards";
+        verso.style.animation = "flipOut .2s forwards";
+    }
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     loadJsonData();
     setTimeout(headerTransition,1000)
