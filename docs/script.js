@@ -144,11 +144,13 @@ function showProjectCard(el){
     let showEl = document.getElementById("show-project-card");
     document.getElementById("project-info").innerHTML = el.innerHTML;
     showEl.style.display = "block";
+    showEl.style.animation = "showProjectIn .5s forwards";
 }
 
 function closeProjectCard(){
     let showEl = document.getElementById("show-project-card");
     showEl.style.display = "none";
+    showEl.style.animation = "showProjectOut .5s forwards";
 }
 
 function setUpSkillBars(){
@@ -221,9 +223,9 @@ function setUpSkillBars(){
 
 function setUpProjectsSlide() {
     let imgs = [
-        "bashsays.gif", "NAE1.gif", "imgmani.png", "cobracoral.gif", "hiko.jpg",
-        "moira-database.png", "primateria.gif", "projetopoliteia1.png", "calendario.png",
-        "bashsays.gif", "NAE1.gif"
+        "bashsays.gif", "NAE1.gif", "imgmani.png", "cobracoral.gif", "hiko.gif",
+        "moira-database.png", "primateria.gif", "projetopoliteia1.png", "sdds-bb-s2.gif",
+        "calendario.png", "casa-das-maquinas.gif", "bashsays.gif", "NAE1.gif"
     ]
     let slide = document.getElementById("projects-slide");
 
@@ -238,7 +240,7 @@ function setUpProjectsSlide() {
 
 function moveSlide() {
     let slide = document.getElementById("projects-slide");
-    if (slide.scrollLeft > slide.scrollWidth - window.innerWidth) {
+    if (slide.scrollLeft >= slide.scrollWidth - window.innerWidth) {
         slide.scroll(0,0);
     }
     slide.scrollBy(slide.getBoundingClientRect().left + 1,0);

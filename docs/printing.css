@@ -79,6 +79,7 @@ nav div.colunas-container div.coluna:not(:first-child) ul {
 }
 
 nav.bottom-border, div.bottom-border {
+    border-color: rgb(195, 167, 206);
     border-radius: 0px;
     padding-bottom: 5px;
     margin-bottom: 10px;
@@ -86,6 +87,8 @@ nav.bottom-border, div.bottom-border {
 
 nav#quem-sou {
     background-color: rgb(195, 167, 206);
+    border-color: rgb(195, 167, 206);
+    border-style: solid;
     border-radius: 0px;
     margin: 0px;
     margin-bottom: 2vh;

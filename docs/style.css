@@ -101,8 +101,10 @@ ul.menu-bar li.activate-hidden-menu ul.hidden-menu {
     transition: .2s;
     position: fixed;
     transition: .2s;
-    display: none;
+    opacity: 0%;
+    animation-duration: .2s;
     z-index: 3;
+    display: none;
 }
 
 ul.menu-bar li.activate-hidden-menu ul.hidden-menu li {
@@ -119,6 +121,7 @@ ul.menu-bar li.activate-hidden-menu ul.hidden-menu li a:hover {
 }
 
 ul.menu-bar li.activate-hidden-menu:hover ul.hidden-menu {
+    opacity: 100%;
     display: block;
 }
 
@@ -208,8 +211,17 @@ div.coluna, div.not-metade {
     display: inline-block;
 }
 
+div.coluna {
+    width: 50%;
+}
+
 div.coluna.skill-coluna {
+    width: 17vw;
     margin-right: 3vw;
+}
+
+div.coluna.skill-coluna:last-child {
+    margin-right: 0px;
 }
 
 div.skill-bar {
@@ -258,6 +270,7 @@ nav.p-mostrando div.skill-bar div.skill-bar-meter {
 }
 
 img.img-thumbnail {
+    text-align: center;
     max-height: 20vh;
     display: inline-block;
     pointer-events: none;
@@ -284,7 +297,7 @@ div.contato-coluna {
 
 div.contato-coluna img.img-thumbnail {
     max-height: 30vh;
-    margin-left: 20vw;
+    margin-left: 10vw;
 }
 
 nav.card-container {
@@ -313,8 +326,10 @@ div.project-card:hover {
 
 div.project-card img.project-card-img {
     border-radius: 20px 20px 0px 0px;
-    max-width: 30vw;
+    width: 100%;
+    max-height: 40vh;
     pointer-events: none;
+    object-fit: cover;
 }
 
 div.project-card div.project-card-content {
@@ -364,6 +379,16 @@ div#show-project-card div#project-info img {
 
 div#show-project-card div#project-info h3 {
     font-size: 32pt;
+}
+
+@keyframes showProjectIn {
+    0% {opacity: 0%; transform: translateY(-5vh); display: block;}
+    100% {opacity: 100%; transform: translateY(0vh); display: block;}
+}
+
+@keyframes showProjectOut {
+    0% {opacity: 100%; transform: translateY(0vh); display: block;}
+    100% {opacity: 0%; transform: translateY(-5vh); display: none;}
 }
 
 nav#contato {
@@ -452,8 +477,23 @@ div#show-project-card button.btn {
     }
     
     nav {
+        border-radius: 0px;
         margin: 2vh 0px 2vh 0px;
         padding: 1vh 5vw 1vh 5vw;
+    }
+
+    img.img-thumbnail {
+        max-width: 60vw;
+        margin-left: 15vw;
+    }
+
+    div.colunas-container div.coluna, div.colunas-container div.not-metade {
+        width: 100%;
+    }
+
+    img.foto-perfil {
+        max-width: 60vw;
+        margin-left: 10vw;
     }
     
     div.colunas-container, div.coluna, div.not-metade, div.project-card {
