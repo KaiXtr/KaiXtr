@@ -225,7 +225,7 @@ function setUpProjectsSlide() {
     let imgs = [
         "bashsays.gif", "NAE1.gif", "imgmani.png", "cobracoral.gif", "hiko.gif",
         "moira-database.png", "primateria.gif", "projetopoliteia1.png", "sdds-bb-s2.gif",
-        "calendario.png", "casa-das-maquinas.gif", "bashsays.gif", "NAE1.gif"
+        "calendario.png", "bashsays.gif", "NAE1.gif"
     ]
     let slide = document.getElementById("projects-slide");
 
