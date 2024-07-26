@@ -162,7 +162,7 @@
         </div>
     </nav>
     <nav id="formacao">
-        <h2>Formação</h2>
+        <h2>Formação acadêmica</h2>
         <div class="colunas-container bottom-border">
             <div class="coluna">
                 <img class="img-thumbnail" src="https://sga.ifb.edu.br/assets/ifb_sigla-eac36b1e5e92dddcc491c75cd5550a59.png" alt="Instituto Federal de Brasília">
@@ -183,16 +183,26 @@
                 </ul>
             </div>
         </div>
-        <h2>Experiência</h2>
+        <h2>Experiência profissional</h2>
         <div class="colunas-container">
             <div class="coluna">
                 <img class="img-thumbnail" src="https://logodownload.org/wp-content/uploads/2018/07/tse-logo.png" alt="Tribunal Superior Eleitoral">
                 <h3>Tribunal Superior Eleitoral</h3>
                 <ul>
                     <li>Estágio em desenvolvimento web</li>
-                    <li>Início em 12/2023</li>
+                    <li>Início em 12/2023 e término em 08/2024</li>
                     <li>Testes unitários, front-end e back-end</li>
                     <li>Java, Spring, Angular, Oracle DB etc.</li>
+                </ul>
+            </div>
+            <div class="coluna">
+                <img class="img-thumbnail" src="https://www.brasoftware.com.br/Imagens/CasosSucesso/serpro-logo.png" alt="Serviço Federal de Processamento de Dados">
+                <h3>Serviço Federal de Processamento de Dados</h3>
+                <ul>
+                    <li>Analista de TI</li>
+                    <li>Início em 08/2024</li>
+                    <li>Análise de requisitos e gestão de TI</li>
+                    <li>Planejamento de processos de software</li>
                 </ul>
             </div>
         </div>
@@ -508,36 +518,49 @@
             </div>
         </div>
     </nav>
-    <nav id="contato">
-        <h2>Entre em contato!</h2>
-        <div class="coluna contato-coluna">
-            <p>
-                <i class="fa fa-envelope"></i>
-                <strong>Email:</strong>
-                ewertonmatheus2113@gmail.com
-            </p>
-            <p>
-                <i class="fa fa-whatsapp"></i>
-                <strong>Telefone:</strong>
-                +55 (61) 99464-0527
-            </p>
-            <p>
-                <i class="fa fa-github"></i>
-                <strong>GitHub:</strong>
-                <a href="https://github.com/KaiXtr" target="_blank">@KaiXtr</a>
-            </p>
-            <p>
-                <i class="fa fa-linkedin"></i>
-                <strong>LinkedIn:</strong>
-                <a href="https://linkedin.com/in/bramosewerton" target="_blank">bramosewerton</a>
-            </p>
-            <p>
-                <strong>Lattes:</strong>
-                <a href="https://lattes.cnpq.br/2274633017966563" target="_blank">2274633017966563</a>
-            </p>
+    <nav id="contato" onclick="contatoFlip()">
+        <div id="contato-frente">
+            <h2>Entre em contato!</h2>
+            <div class="coluna contato-coluna">
+                <p>
+                    <i class="fa fa-globe"></i>
+                    <strong>Website:</strong>
+                    <a href="https://kaixtr.github.io/KaiXtr" target="_blank">kaixtr.github.io/KaiXtr</a>
+                </p>
+                <p>
+                    <i class="fa fa-envelope"></i>
+                    <strong>Email:</strong>
+                    ewertonmatheus2113@gmail.com
+                </p>
+                <p>
+                    <i class="fa fa-whatsapp"></i>
+                    <strong>Telefone:</strong>
+                    +55 (61) 99464-0527
+                </p>
+                <p>
+                    <i class="fa fa-github"></i>
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/KaiXtr" target="_blank">@KaiXtr</a>
+                </p>
+                <p>
+                    <i class="fa fa-linkedin"></i>
+                    <strong>LinkedIn:</strong>
+                    <a href="https://linkedin.com/in/bramosewerton" target="_blank">bramosewerton</a>
+                </p>
+                <p>
+                    <strong>Lattes:</strong>
+                    <a href="https://lattes.cnpq.br/2274633017966563" target="_blank">2274633017966563</a>
+                </p>
+            </div>
+            <div class="coluna contato-coluna">
+                <img class="img-thumbnail" src="img/qrcode.png" alt="QR Code">
+            </div>
         </div>
-        <div class="coluna contato-coluna">
-            <img class="img-thumbnail" src="img/qrcode.png" alt="QR Code">
+        <div id="contato-verso" class="hide-printing" style="visibility: hidden;">
+            <h1>Ewerton Bramos</h1>
+            <p>
+                Analista de TI e educador
+            </p>
         </div>
     </nav>
     <footer>

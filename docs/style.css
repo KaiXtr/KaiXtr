@@ -348,6 +348,31 @@ div#show-project-card div#project-info h3 {
     font-size: 32pt;
 }
 
+nav#contato {
+    position: relative;
+}
+
+nav#contato div#contato-frente {
+    position: relative;
+}
+
+nav#contato div#contato-verso {
+    text-align: center;
+    width: inherit;
+    top: 5vh;
+    position: absolute;
+}
+
+@keyframes flipIn {
+    0% {transform: rotateY(90deg); visibility: hidden;}
+    100% {transform: rotateY(0deg); visibility: visible;}
+}
+
+@keyframes flipOut {
+    0% {transform: rotateY(0deg); visibility: visible;}
+    100% {transform: rotateY(90deg); visibility: hidden;}
+}
+
 footer {
     width: 100%;
     text-align: center;
