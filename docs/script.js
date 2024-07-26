@@ -15,8 +15,8 @@ let headerStrings = [
 
 let newHeader = []
 
-const skillRate = ["Em aprendizado", "Competente", "Bom", "Excelente", "Especialidade"]
-const langRate = ["Em aprendizado", "Lê bem", "Lê e escreve bem", "Lê, escreve e fala bem", "Fluente"]
+const skillRate = ["Aprendendo", "Competente", "Bom", "Excelente", "Especialidade"]
+const langRate = ["Aprendendo", "Lê bem", "Lê e escreve bem", "Avançado", "Fluente"]
 
 let hardSkills = {};
 let softSkills = {};
@@ -260,6 +260,12 @@ function contatoFlip() {
         frente.style.animation = "flipIn .2s forwards";
         verso.style.animation = "flipOut .2s forwards";
     }
+}
+
+function imprimirSite() {
+    let headerH1Text = document.getElementById("header-h1-text");
+    headerH1Text.innerHTML = "analista e educador"
+    window.print();
 }
 
 document.addEventListener("DOMContentLoaded", function() {

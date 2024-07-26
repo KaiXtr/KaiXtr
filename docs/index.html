@@ -54,7 +54,7 @@
                 <li>...Laravel, como eu fiz com o site do Literledge.</li>
             </ul>
         </p>
-        <button class="btn" onclick="window.print()">
+        <button class="btn" onclick="imprimirSite()">
             Imprimir site como currículo
         </button>
     </nav>
@@ -62,16 +62,15 @@
     <nav id="quem-sou">
         <h2 class="hide-printing">Quem eu sou?</h2>
         <div class="colunas-container bottom-border">
-            <div class="coluna">
+            <div class="not-metade">
                 <p>
-                    Olá pessoal! Me chamo Ewerton Bramos e sou um jovem adulto entusiasmado com a ciência e a tecnologia, sempre visando contribuir com meus conhecimentos para a sociedade, seja através da pesquisa científica, seja por resolução de problemas em organizações e empresas, seja através da educação e de trabalhos sociais.
+                    Sou um jovem paraense de 21 anos entusiasmado com a ciência, a tecnologia, a inovação e a educação. Trabalho com jogos, sala de aula, pesquisa científica e desenvolvimento web front-end e back-end. Sou habituado com trabalho em equipe e sob pressão, e por isso, boa comunicação, pensamento crítico e resolução de conflitos são meus pontos fortes.
                 </p>
             </div>
-            <div class="coluna">
+            <div class="not-metade">
                 <img class="foto-perfil" src="img/foto.jpg" alt="Foto">
             </div>
         </div>
-        <br>
         <div class="bottom-border hide-printing">
             <h3>Um pouco da minha história...</h3>
             <p>
@@ -98,7 +97,7 @@
                         Já participei de uma game jam durante a pandemia de 2020 e de dois hackathons: um envolvendo kanban e planejamento de projetos pela PMI na BIOTIC e outro para o desenvolvimento de um jogo eletrônico para fliperama na Campus Party 2023.
                     </li>
                     <li>
-                        Sou baterista da banda de rock Umbral, do Instituto Federal de Brasília, e já participei de outro grupo musical vencedor em um torneio que ocorreu em Samambaia, DF.
+                        Sou baterista da banda de rock 1bral, do Instituto Federal de Brasília, e já participei de outro grupo musical vencedor em um torneio que ocorreu em Samambaia, DF.
                     </li>
                     <li>
                         Adoro desenhar e escrever, e por isso, crio histórias principalmente através de quadrinhos e livros. Por vezes, também gosto de expor meus pensamentos emocionais em poesia e filosóficos em ensaios.
@@ -111,13 +110,107 @@
         </div>
         <div class="hide-printing">
             <h3>Minhas aspirações</h3>
-            <ul>
-                <li>Educação tecnológica</li>
-                <li>Psicologia e pedagogia</li>
-                <li>Aprendizado de máquina</li>
-                <li>Computação de alta performance</li>
-                <li>Computação quântica</li>
-            </ul>
+            <div class="colunas-container">
+                <div class="coluna">
+                    <ul>
+                        <li>Educação tecnológica</li>
+                        <li>Psicologia e pedagogia</li>
+                        <li>Aprendizado de máquina</li>
+                    </ul>
+                </div>
+                <div class="coluna">
+                    <ul>
+                        <li>Gestão de projetos</li>
+                        <li>Computação de alta performance</li>
+                        <li>Computação quântica</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav id="formacao">
+        <h2>Experiência profissional</h2>
+        <div class="colunas-container">
+            <div class="coluna">
+                <img class="img-thumbnail" src="https://logodownload.org/wp-content/uploads/2018/07/tse-logo.png" alt="Tribunal Superior Eleitoral">
+                <h3>Tribunal Superior Eleitoral</h3>
+                <ul>
+                    <li>Estágio em desenvolvimento web</li>
+                    <li>Início em 12/2023 e término em 08/2024</li>
+                    <li>Testes unitários e desenvolvimento full-stack</li>
+                    <li>Java, Spring, Angular, Electron e Oracle DB</li>
+                </ul>
+            </div>
+            <div class="coluna">
+                <img class="img-thumbnail" src="https://www.brasoftware.com.br/Imagens/CasosSucesso/serpro-logo.png" alt="Serviço Federal de Processamento de Dados">
+                <h3>Serviço Federal de Processamento de Dados</h3>
+                <ul>
+                    <li>Analista de TI</li>
+                    <li>Início em 08/2024</li>
+                    <li>Análise de requisitos e gestão de TI</li>
+                </ul>
+            </div>
+        </div>
+        <h2>Formação acadêmica</h2>
+        <div class="colunas-container bottom-border">
+            <div class="coluna">
+                <img class="img-thumbnail" src="https://sga.ifb.edu.br/assets/ifb_sigla-eac36b1e5e92dddcc491c75cd5550a59.png" alt="Instituto Federal de Brasília">
+                <h3>Instituto Federal de Brasília</h3>
+                <ul>
+                    <li>Tecnologia em Sistemas para Internet</li>
+                    <li>Início em 02/2022 e término em 07/2024</li>
+                    <li>Monitor do laboratório maker do campus</li>
+                </ul>
+            </div>
+            <div class="coluna">
+                <img class="img-thumbnail" src="https://seeklogo.com/images/F/faculdade-udf-logo-7A5B48D7E0-seeklogo.com.png" alt="Universidade do Distrito Federal">
+                <h3>Universidade do Distrito Federal</h3>
+                <ul>
+                    <li>Bacharelado em Ciência da Computação</li>
+                    <li>Início em 02/2022 e término em 12/2025</li>
+                    <li>Monitor de letramento digital para crianças</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav id="skills-printing" class="bottom-border printing-only">
+        <div class="icons-list">
+            <h2>Competências</h2>
+            <i class="fa-brands fa-2x fa-linux"></i>
+            <i class="fa-brands fa-2x fa-git-alt"></i>
+            <i class="fa-brands fa-2x fa-python"></i>
+            <i class="fa-brands fa-2x fa-js"></i>
+            <i class="fa-brands fa-2x fa-angular"></i>
+            <i class="fa-brands fa-2x fa-node-js"></i>
+            <i class="fa-brands fa-2x fa-java"></i>
+            <i class="fa-brands fa-2x fa-php"></i>
+            <i class="fa-brands fa-2x fa-docker"></i>
+        </div>
+        <div class="colunas-container">
+            <div class="coluna">
+                <ul>
+                    <li>Fluente em inglês e avançado em espanhol</li>
+                    <li>Angular, React, Rails, REST API e Electron</li>
+                    <li>Maven, Spring, PHP, MySQL, NoSQL e Oracle DB</li>
+                    <li>Python, Django e Machine Learning</li>
+                    <li>Arduino, Scratch, Blender e Tinkercad</li>
+                    <li>Programação embarcada, C++ e Game Maker</li>
+                    <li>Docker, kubernetes, virtualização e OAuth</li>
+                    <li>Programação funcional, mainframes e COBOL</li>
+                </ul>
+            </div>
+            <div class="coluna">
+                <ul>
+                    <li>Boa comunicação e trabalho em equipe</li>
+                    <li>Sempre disposto a ouvir e ajudar</li>
+                    <li>Gestão de projetos, riscos e requisitos</li>
+                    <li>Scrum, PMBOK e metodologias ágeis</li>
+                    <li>Ensino e metodologias ativas</li>
+                    <li>Design UI/UX, semiótica e ergonomia</li>
+                    <li>Impressão 3D, estatística e big data</li>
+                    <li>Android, Kotlin, Flutter e App Inventor</li>
+                </ul>
+            </div>
         </div>
     </nav>
     <nav id="skills">
@@ -135,11 +228,12 @@
             <div class="coluna">
                 <h3>Interesses</h3>
                 <ul>
-                    <li>Atualidades, geopolítica e viagens</li>
-                    <li>Física, divulgação científica e tecnologia</li>
+                    <li>Educação, STEAM, cultura maker e robótica</li>
                     <li>Game dev, software livre e jogos retrô</li>
-                    <li>Literatura, poesia, filosofia & artes</li>
-                    <li>Bateria, música e eventos culturais</li>
+                    <li>Design thinking, economia solidária e gestão</li>
+                    <li>Psicologia e aprendizagem criativa</li>
+                    <li>Diversidade, inclusão e meio ambiente</li>
+                    <li>Literatura, astronomia, filosofia e música</li>
                 </ul>
                 <h3>Premiações</h3>
                 <ul>
@@ -151,58 +245,17 @@
                 <h3>Experiências</h3>
                 <ul>
                     <li>Aulas de reforço de exatas para ensino médio</li>
-                    <li>Freelancer como web designer para UnB</li>
-                    <li>Monitor e palestrante em eventos de tecnologia</li>
-                    <li>Voluntariado para educação básica e idosos</li>
-                    <li>Criação de jogos para computador e mobile</li>
-                    <li>Desenvolvimento de um bot para Discord</li>
-                    <li>Pesquisador em projetos PIBID</li>
+                    <li>Web designer autônomo e autogestionado</li>
+                    <li>Palestrante do FLISOL e da Campus Party</li>
+                    <li>Monitor para educação básica e idosos</li>
+                    <li>Criador de jogos para computador e mobile</li>
+                    <li>Competidor de game jams e hackathons</li>
+                    <li>Bolsista em projeto de inovação do FapDF</li>
+                    <li>Guia voluntário da Semana Nacional de CT</li>
                 </ul>
-            </div>
-        </div>
-    </nav>
-    <nav id="formacao">
-        <h2>Formação acadêmica</h2>
-        <div class="colunas-container bottom-border">
-            <div class="coluna">
-                <img class="img-thumbnail" src="https://sga.ifb.edu.br/assets/ifb_sigla-eac36b1e5e92dddcc491c75cd5550a59.png" alt="Instituto Federal de Brasília">
-                <h3>Instituto Federal de Brasília</h3>
+                <h3>Publicações</h3>
                 <ul>
-                    <li>Tecnologia em Sistemas para Internet</li>
-                    <li>Início em 02/2022 e término em 07/2024</li>
-                    <li>Pesquisador do Lab Maker do campus Brasília</li>
-                </ul>
-            </div>
-            <div class="coluna">
-                <img class="img-thumbnail" src="https://seeklogo.com/images/F/faculdade-udf-logo-7A5B48D7E0-seeklogo.com.png" alt="Universidade do Distrito Federal">
-                <h3>Universidade do Distrito Federal</h3>
-                <ul>
-                    <li>Bacharelado em Ciência da Computação</li>
-                    <li>Início em 02/2022 e término em 12/2025</li>
-                    <li>Monitor em letramento digital para idosos</li>
-                </ul>
-            </div>
-        </div>
-        <h2>Experiência profissional</h2>
-        <div class="colunas-container">
-            <div class="coluna">
-                <img class="img-thumbnail" src="https://logodownload.org/wp-content/uploads/2018/07/tse-logo.png" alt="Tribunal Superior Eleitoral">
-                <h3>Tribunal Superior Eleitoral</h3>
-                <ul>
-                    <li>Estágio em desenvolvimento web</li>
-                    <li>Início em 12/2023 e término em 08/2024</li>
-                    <li>Testes unitários, front-end e back-end</li>
-                    <li>Java, Spring, Angular, Oracle DB etc.</li>
-                </ul>
-            </div>
-            <div class="coluna">
-                <img class="img-thumbnail" src="https://www.brasoftware.com.br/Imagens/CasosSucesso/serpro-logo.png" alt="Serviço Federal de Processamento de Dados">
-                <h3>Serviço Federal de Processamento de Dados</h3>
-                <ul>
-                    <li>Analista de TI</li>
-                    <li>Início em 08/2024</li>
-                    <li>Análise de requisitos e gestão de TI</li>
-                    <li>Planejamento de processos de software</li>
+                    <li>Racismo algorítmico: uma revisão sistemática</li>
                 </ul>
             </div>
         </div>
@@ -521,39 +574,42 @@
     <nav id="contato" onclick="contatoFlip()">
         <div id="contato-frente">
             <h2>Entre em contato!</h2>
-            <div class="coluna contato-coluna">
-                <p>
-                    <i class="fa fa-globe"></i>
-                    <strong>Website:</strong>
-                    <a href="https://kaixtr.github.io/KaiXtr" target="_blank">kaixtr.github.io/KaiXtr</a>
-                </p>
-                <p>
-                    <i class="fa fa-envelope"></i>
-                    <strong>Email:</strong>
-                    ewertonmatheus2113@gmail.com
-                </p>
-                <p>
-                    <i class="fa fa-whatsapp"></i>
-                    <strong>Telefone:</strong>
-                    +55 (61) 99464-0527
-                </p>
-                <p>
-                    <i class="fa fa-github"></i>
-                    <strong>GitHub:</strong>
-                    <a href="https://github.com/KaiXtr" target="_blank">@KaiXtr</a>
-                </p>
-                <p>
-                    <i class="fa fa-linkedin"></i>
-                    <strong>LinkedIn:</strong>
-                    <a href="https://linkedin.com/in/bramosewerton" target="_blank">bramosewerton</a>
-                </p>
-                <p>
-                    <strong>Lattes:</strong>
-                    <a href="https://lattes.cnpq.br/2274633017966563" target="_blank">2274633017966563</a>
-                </p>
-            </div>
-            <div class="coluna contato-coluna">
-                <img class="img-thumbnail" src="img/qrcode.png" alt="QR Code">
+            <div class="colunas-container">
+                <div class="coluna contato-coluna">
+                    <p>
+                        <i class="fa fa-globe"></i>
+                        <strong>Website:</strong>
+                        <a href="https://kaixtr.github.io/KaiXtr" target="_blank">kaixtr.github.io/KaiXtr</a>
+                    </p>
+                    <p>
+                        <i class="fa fa-envelope"></i>
+                        <strong>Email:</strong>
+                        ewertonmatheus2113@gmail.com
+                    </p>
+                    <p>
+                        <i class="fa fa-whatsapp"></i>
+                        <strong>Telefone:</strong>
+                        +55 (61) 99464-0527
+                    </p>
+                    <p>
+                        <i class="fa fa-github"></i>
+                        <strong>GitHub:</strong>
+                        <a href="https://github.com/KaiXtr" target="_blank">@KaiXtr</a>
+                    </p>
+                    <p>
+                        <i class="fa fa-linkedin"></i>
+                        <strong>LinkedIn:</strong>
+                        <a href="https://linkedin.com/in/bramosewerton" target="_blank">bramosewerton</a>
+                    </p>
+                    <p>
+                        <strong>Lattes:</strong>
+                        <a href="https://lattes.cnpq.br/2274633017966563" target="_blank">2274633017966563</a>
+                    </p>
+                </div>
+                <div class="coluna contato-coluna">
+                    <img class="img-thumbnail" src="img/qrcode.png" alt="QR Code">
+                    <p class="printing-only">Acesse meu currículo completo!</p>
+                </div>
             </div>
         </div>
         <div id="contato-verso" class="hide-printing" style="visibility: hidden;">
