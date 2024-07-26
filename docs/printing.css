@@ -1,26 +1,54 @@
+@page {
+    size: auto;
+    margin: 0;
+}
+
 body {
-    color: black;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color: rgb(33, 28, 37);
     background-color: white;
 }
 
+a, a:link, a:visited, a:active {
+    color: rgb(33, 28, 37);
+    text-decoration: none;
+    transition-duration: .2s;
+}
+
+a:hover, a:focus {
+    color: rgb(33, 28, 37);
+    text-decoration: none;
+}
+
+.printing-only {
+    display: block;
+}
+
 header ul.menu-bar, div#projects-slide,
-.header-h1-text-onchange1,
+.header-h1-text-onchange1, .header-h1-text-onchange2,
 .hide-printing, button#back-to-top-button,
 .particula, footer {
     display: none;
 }
 
-header h1 {
-    margin: 0vh 2vw 0vh 2vw;
+header {
+    background-color: rgb(195, 167, 206);
+    padding: 5%;
+    padding-bottom: 1vh;
 }
 
-header h1.header-h1-text-onchange2 {
-    transform: translateY(0px);
-    opacity: 100%;
+header h1 {
+    margin: 0vh 2vw 1vh 2vw;
+}
+
+header strong#header-h1-text {
+    visibility: visible !important;
 }
 
 nav {
-    margin: 2vh 2vw 2vh 2vw;
+    background-color: white;
+    margin: 0vh 10% 0vh 10%;
     padding: 0px;
 }
 
@@ -30,25 +58,59 @@ nav.p-escondendo {
     opacity: 100%;
 }
 
+nav h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 nav h3 {
     margin: 0px;
+    margin-bottom: 5px;
     font-size: 12pt;
     line-height: 14pt;
 }
 
-div.bottom-border {
-    border: none;
-    padding-bottom: 0px;
-    margin-bottom: 00px;
+div.coluna  {
+    width: 50vw;
+}
+
+nav div.colunas-container div.coluna:not(:first-child) ul {
+    margin-left: 3px;
+}
+
+nav.bottom-border, div.bottom-border {
+    border-radius: 0px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 nav#quem-sou {
+    background-color: rgb(195, 167, 206);
+    border-radius: 0px;
+    margin: 0px;
+    margin-bottom: 2vh;
+    padding: 0px 5% 0px 5%;
     font-family: 10pt;
     line-height: 13pt;
 }
 
 nav#quem-sou img.foto-perfil {
-    width: 15vw;
+    max-width: 18vw;
+    border: none;
+    border-radius: 20px;
+}
+
+div.icons-list h2, div.icons-list {
+    display: inline-block;
+}
+
+div.icons-list h2 {
+    margin-right: 5vw;
+}
+
+div.icons-list i {
+    color: rgb(33, 28, 37);
+    margin-left: 2vw;
 }
 
 nav#skills div.skill-bar-hint {
@@ -67,19 +129,16 @@ nav#skills div.skill-bar-hint {
     display: inline-block;
 }
 
-nav#skills div.coluna ul {
-    padding-left: 2vw;
-}
-
-nav#skills div.coluna ul li {
-    font-size: 10pt;
-    line-height: 12pt;
-}
-
+nav#formacao ul,
+nav#skills div.coluna ul,
+nav#skills-printing div.coluna ul,
 nav#skills div.other-skills div.coluna ul {
     padding-left: 2vw;
 }
 
+nav#formacao ul li,
+nav#skills div.coluna ul li,
+nav#skills-printing div.coluna ul li,
 nav#skills div.other-skills div.coluna ul li {
     font-size: 10pt;
     line-height: 12pt;
@@ -87,15 +146,6 @@ nav#skills div.other-skills div.coluna ul li {
 
 nav#formacao img.img-thumbnail {
     display: none;
-}
-
-nav#formacao ul {
-    padding-left: 2vw;
-}
-
-nav#formacao ul li {
-    font-size: 10pt;
-    line-height: 12pt;
 }
 
 nav.card-container div.project-card {
@@ -116,8 +166,27 @@ nav.card-container div.project-card div.project-card-content h3 {
 
 nav#contato p {
     margin: 0px;
+    line-height: 16pt;
 }
 
 nav#contato img.img-thumbnail {
+    width: 18vw;
+    margin-left: 0px;
+    text-align: center;
+}
+
+nav#contato div.colunas-container div.coluna:first-child  {
+    width: 60vw;
+}
+
+nav#contato div.colunas-container div.coluna:last-child  {
     width: 20vw;
+    margin-left: 20vw;
+}
+
+nav#contato p.printing-only {
+    text-align: center;
+    font-size: 10pt;
+    line-height: 12pt;
+    visibility: hidden;
 }
