@@ -267,7 +267,14 @@ function contatoFlip() {
 function imprimirSite() {
     let headerH1Text = document.getElementById("header-h1-text");
     headerH1Text.innerHTML = "analista e educador"
-    window.print();
+
+    let elementos = document.getElementsByTagName("nav");
+
+    for (let i=0;i<elementos.length;i++) {
+        elementos[i].classList.add("p-mostrando");
+        elementos[i].classList.remove("p-escondendo");
+    };
+    setTimeout(window.print,500);
 }
 
 document.addEventListener("DOMContentLoaded", function() {
