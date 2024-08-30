@@ -271,9 +271,13 @@ nav.p-mostrando div.skill-bar div.skill-bar-meter {
 
 img.img-thumbnail {
     text-align: center;
-    height: 15vh;
+    max-height: 20vh;
     display: inline-block;
     pointer-events: none;
+}
+
+nav#formacao img.img-thumbnail {
+    height: 15vh;
 }
 
 img.foto-perfil {

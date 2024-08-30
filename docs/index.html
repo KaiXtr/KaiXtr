@@ -140,17 +140,18 @@
             </div>
             <div class="coluna">
                 <img class="img-thumbnail" src="https://www.brasoftware.com.br/Imagens/CasosSucesso/serpro-logo.png" alt="Serviço Federal de Processamento de Dados">
-                <h3>Serviço Federal de Processamento de Dados</h3>
+                <h3 class="hide-printing">Serviço Federal de Processamento de Dados</h3>
+                <h3 class="printing-only">SERPRO</h3>
                 <ul>
                     <li>Analista de TI pleno</li>
-                    <li>Atuação no 
+                    <li> 
                         <a href="https://portalunico.siscomex.gov.br/portal/" target="_blank">
                             Controle de Carga e Trânsito do Siscomex
                         </a>
                     </li>
                     <li>Início em 08/2024</li>
                     <li>Desenvolvimento web e DevOps</li>
-                    <li>Java, Spring, Angular, WildFly, Demoiselle e Oracle DB</li>
+                    <li>Java, Spring, Angular, WildFly e Oracle DB</li>
                 </ul>
             </div>
         </div>
@@ -175,7 +176,7 @@
                 </ul>
             </div>
         </div>
-        <div class="colunas-container bottom-border">
+        <div class="colunas-container bottom-border hide-printing">
             <div class="coluna">
                 <img class="img-thumbnail" src="img/iesb.jpg" alt="Instituto de Educação Superior de Brasília">
                 <h3>Instituto de Educação Superior de Brasília</h3>
@@ -186,15 +187,15 @@
                 </ul>
             </div>
         </div>
-        <h2>Trabalho voluntário</h2>
-        <div class="colunas-container">
+        <h2 class="hide-printing">Trabalho voluntário</h2>
+        <div class="colunas-container hide-printing">
             <div class="coluna">
                 <img class="img-thumbnail" src="img/mcti.png" alt="Ministério da Ciência, Tecnologia e Inovação">
                 <h3>Ministério da Ciência, Tecnologia e Inovação</h3>
                 <ul>
                     <li>Guia escolar da Semana Nacional de Ciência e Tecnologia</li>
                     <li>Organização e operacional do evento</li>
-                    <li>EIncentivo e fomento à educação tecnológica</li>
+                    <li>Incentivo e fomento à educação tecnológica</li>
                 </ul>
             </div>
             <div class="coluna">
@@ -231,7 +232,6 @@
                     <li>Arduino, Scratch, Blender e Tinkercad</li>
                     <li>Programação embarcada, C++ e Game Maker</li>
                     <li>Docker, kubernetes, virtualização e OAuth</li>
-                    <li>Programação funcional, mainframes e COBOL</li>
                 </ul>
             </div>
             <div class="coluna">
@@ -242,7 +242,6 @@
                     <li>Scrum, PMBOK e metodologias ágeis</li>
                     <li>Ensino e metodologias ativas</li>
                     <li>Design UI/UX, semiótica e ergonomia</li>
-                    <li>Impressão 3D, estatística e big data</li>
                     <li>Android, Kotlin, Flutter e App Inventor</li>
                 </ul>
             </div>
@@ -298,6 +297,26 @@
     <nav id="projetos" class="card-container hide-printing">
         <h2>Meus Projetos</h2>
         <div id="web" class="project-card" onclick="showProjectCard(this)">
+            <img class="project-card-img" src="img/bemnafoto.png" alt="Bem na Foto">
+            <div class="project-card-content">
+                <h3>Bem na Foto</h3>
+                <span>Sistema de validação de fotos para candidaturas do sistema de Divulgação de Candidaturas e Contas Eleitorais</span>
+                <p>
+                    Trabalho profissional do estágio no Tribunal Superior Eleitoral.
+                </p>
+            </div>
+        </div>
+        <div class="project-card" onclick="showProjectCard(this)">
+            <img class="project-card-img" src="img/siscomex.png" alt="Siscomex">
+            <div class="project-card-content">
+                <h3>Siscomex</h3>
+                <span>Portal único do sistema do Comércio Exterior</span>
+                <p>
+                    Trabalho profissional no Serviço Federal de Processamento de Dados.
+                </p>
+            </div>
+        </div>
+        <div class="project-card" onclick="showProjectCard(this)">
             <img class="project-card-img" src="img/NAE1.gif" alt="Núcleo de Apoio a Empreendimentos">
             <div class="project-card-content">
                 <h3>Núcleo de Apoio a Empreendimentos</h3>
@@ -644,7 +663,9 @@
     <nav class="hide-printing">
         <h1>Como eu fiz esse site?</h1>
         <p>
-            Este é um site estático feito em DHTML, ou seja, HTML, CSS e Javascript (não sou muito fã de Bootstrap, prefiro botar a mão na massa). Todo o site funciona em uma única página e utilizando 5 arquivos. Mas poderia ser feito com...
+            Este é um site estático feito em DHTML, ou seja, HTML, CSS e Javascript básicos apenas.
+            Todo o site funciona em uma única página e utilizando 5 arquivos, utilizando também um arquivo JSON para armazenar dados de competências com mais facilidade.
+            O site também poderia ser desenvolvido em...
             <ul>
                 <li><strong>...Angular</strong>, como em minha experiência no Tribunal Superior Eleitoral.</li>
                 <li><strong>...Django</strong>, como eu fiz com o Núcleo de Apoio a Empreendimentos.</li>

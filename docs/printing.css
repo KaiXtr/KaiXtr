@@ -29,7 +29,7 @@ header ul.menu-bar, div#projects-slide,
 .header-h1-text-onchange1, .header-h1-text-onchange2,
 .hide-printing, button#back-to-top-button,
 .particula, footer {
-    display: none;
+    display: none !important;
 }
 
 header {
@@ -97,8 +97,13 @@ nav#quem-sou {
     line-height: 13pt;
 }
 
+nav#quem-sou div.colunas-container div.not-metade p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 nav#quem-sou img.foto-perfil {
-    max-width: 18vw;
+    max-width: 10vh;
     border: none;
     border-radius: 20px;
 }
@@ -169,11 +174,12 @@ nav.card-container div.project-card div.project-card-content h3 {
 
 nav#contato p {
     margin: 0px;
-    line-height: 16pt;
+    line-height: 14pt;
+    font-size: 10pt;
 }
 
 nav#contato img.img-thumbnail {
-    width: 18vw;
+    width: 12vh;
     margin-left: 0px;
     text-align: center;
 }
