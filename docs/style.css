@@ -271,7 +271,7 @@ nav.p-mostrando div.skill-bar div.skill-bar-meter {
 
 img.img-thumbnail {
     text-align: center;
-    max-height: 20vh;
+    height: 15vh;
     display: inline-block;
     pointer-events: none;
 }
