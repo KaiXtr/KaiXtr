@@ -15,7 +15,7 @@
         "Python": 10,
         "Pandas": 8,
         "Qt": 8,
-        "Django": 8,
+        "Django": 9,
 
         "Java EE": 7,
         "Maven": 9,
@@ -24,8 +24,8 @@
         "PHP": 7,
         "Laravel": 6,
 
-        "Ruby": 5,
-        "Rails": 4,
+        "Ruby": 6,
+        "Rails": 6,
 
         "Flutter": 6,
         "Android": 6,
@@ -50,8 +50,8 @@
         "REST": 8,
 
         "Mainframes": 6,
-        "COBOL": 7,
-        "IBM z/OS": 7,
+        "COBOL": 6,
+        "IBM z/OS": 6,
 
         "LXC": 8,
         "Docker": 8,
