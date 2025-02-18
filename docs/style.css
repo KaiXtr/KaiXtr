@@ -461,6 +461,17 @@ div#show-project-card button.btn {
     position: fixed;
 }
 
+div#show-project-card .project-card-img {
+    max-width: 45% !important;
+    display: inline-block;
+}
+
+div#show-project-card .project-card-content {
+    width: 40%;
+    margin-left: 2vw;
+    display: inline-block;
+}
+
 @keyframes particula-animacao {
     0% {
         transform: rotate(0) translateY(0px);
