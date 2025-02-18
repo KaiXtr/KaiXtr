@@ -19,11 +19,36 @@
             <li>
                 <a href="#quem-sou">Quem sou eu?</a>
             </li>
-            <li>
-                <a href="#skills">Minhas competências</a>
+            <li class="activate-hidden-menu">
+                <a href="#experiencia">Experiência</a>
+                <ul class="hidden-menu">
+                    <li>
+                        <a href="#profissional">Experiência profissional</a>
+                    </li>
+                    <li>
+                        <a href="#academica">Formação acadêmica</a>
+                    </li>
+                    <li>
+                        <a href="#sociedades">Sociedades</a>
+                    </li>
+                    <li>
+                        <a href="#voluntaria">Trabalho voluntário</a>
+                    </li>
+                </ul>
             </li>
-            <li>
-                <a href="#formacao">Formação</a>
+            <li class="activate-hidden-menu">
+                <a href="#competencias">Competências</a>
+                <ul class="hidden-menu">
+                    <li>
+                        <a href="#hard-skills">Hard skills</a>
+                    </li>
+                    <li>
+                        <a href="#soft-skills">Soft skills</a>
+                    </li>
+                    <li>
+                        <a href="#idiomas">Idiomas</a>
+                    </li>
+                </ul>
             </li>
             <li class="activate-hidden-menu">
                 <a href="#projetos">Meus projetos</a>
@@ -117,8 +142,8 @@
             </div>
         </div>
     </nav>
-    <nav id="formacao">
-        <h2>Experiência profissional</h2>
+    <nav id="experiencia">
+        <h2 id="profissional">Experiência profissional</h2>
         <div class="colunas-container bottom-border">
             <div class="coluna">
                 <img class="img-thumbnail" src="https://logodownload.org/wp-content/uploads/2018/07/tse-logo.png" alt="Tribunal Superior Eleitoral">
@@ -156,7 +181,7 @@
                 </ul>
             </div>
         </div>
-        <h2>Formação acadêmica</h2>
+        <h2 id="academica">Formação acadêmica</h2>
         <div class="colunas-container">
             <div class="coluna">
                 <img class="img-thumbnail" src="https://sga.ifb.edu.br/assets/ifb_sigla-eac36b1e5e92dddcc491c75cd5550a59.png" alt="Instituto Federal de Brasília">
@@ -188,7 +213,7 @@
                 </ul>
             </div>
         </div>
-        <h2 class="hide-printing">Sociedades</h2>
+        <h2 id="sociedades" class="hide-printing">Sociedades</h2>
         <div class="colunas-container hide-printing">
             <div class="coluna">
                 <h3>Sociedade Brasileira de Computação</h3>
@@ -203,7 +228,7 @@
                 </ul>
             </div>
         </div>
-        <h2 class="hide-printing">Trabalho voluntário</h2>
+        <h2 id="voluntaria" class="hide-printing">Trabalho voluntário</h2>
         <div class="colunas-container hide-printing">
             <div class="coluna">
                 <img class="img-thumbnail" src="img/mcti.png" alt="Ministério da Ciência, Tecnologia e Inovação">
@@ -274,14 +299,14 @@
             </div>
         </div>
     </nav>
-    <nav id="skills">
+    <nav id="competencias">
         <div class="hide-printing">
             <h2>Competências</h2>
-            <h3>Hard Skills</h3>
+            <h3 id="hard-skills">Hard Skills</h3>
             <div id="hard-skills-container" class="bottom-border"></div>
-            <h3>Soft Skills</h3>
+            <h3 id="soft-skills">Soft Skills</h3>
             <div id="soft-skills-container" class="bottom-border"></div>
-            <h3>Idiomas</h3>
+            <h3 id="idiomas">Idiomas</h3>
             <div id="lang-skills-container" class="bottom-border"></div>
         </div>
 
@@ -344,7 +369,7 @@
             </div>
         </div>
         <div class="project-card" onclick="showProjectCard(this)">
-            <img class="project-card-img" src="img/NAE1.gif" alt="Núcleo de Apoio a Empreendimentos">
+            <img class="project-card-img" src="img/nae-plataforma.gif" alt="Núcleo de Apoio a Empreendimentos">
             <div class="project-card-content">
                 <h3>Núcleo de Apoio a Empreendimentos</h3>
                 <span>Plataforma web Django para incubadora do IFB São Sebastião</span>
@@ -400,7 +425,7 @@
             </div>
         </div>
         <div class="project-card" onclick="showProjectCard(this)">
-            <img class="project-card-img" src="img/cobracoralwebsite.png" alt="Cobracoral AVA">
+            <img class="project-card-img" src="img/cobracoral-ava.gif" alt="Cobracoral AVA">
             <div class="project-card-content">
                 <h3>Cobracoral AVA</h3>
                 <span>Um ambiente virtual de aprendizagem feito em Ruby on Rails que utiliza a linguagem de programação cobracoral.</span>

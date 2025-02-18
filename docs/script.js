@@ -235,9 +235,10 @@ function setUpSkillBars(){
 
 function setUpProjectsSlide() {
     let imgs = [
-        "bashsays.gif", "NAE1.gif", "imgmani.png", "cobracoral.gif", "hiko.gif",
-        "moira-database.png", "primateria.gif", "projetopoliteia1.png", "sdds-bb-s2.gif",
-        "calendario.png", "casa-das-maquinas.gif", "bashsays.gif", "NAE1.gif"
+        "bashsays.gif", "shooter-hunter.gif", "cobracoral-ava.gif", "nae-plataforma.gif",
+        "hiko.gif",  "cobracoral.gif", "primateria.gif", "imgmani.png", "moira-database.png",
+        "sdds-bb-s2.gif", "calendario.png", "casa-das-maquinas.gif", "projetopoliteia1.png", 
+        "bashsays.gif", "shooter-hunter.gif"
     ]
     let slide = document.getElementById("projects-slide");
 
