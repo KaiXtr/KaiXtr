@@ -380,6 +380,24 @@ div#show-project-card {
     z-index: 8;
 }
 
+div#show-project-card button.btn {
+    right: 4vw;
+    top: 2vh;
+    position: fixed;
+}
+
+div#show-project-card .project-card-img {
+    max-width: 45% !important;
+    display: inline-block;
+}
+
+div#show-project-card .project-card-content {
+    width: 40%;
+    margin-left: 2vw;
+    display: inline-block;
+    vertical-align: top;
+}
+
 div#show-project-card div#project-info {
     background-color: rgb(53, 42, 63);
     border-radius: 20px;
@@ -456,22 +474,6 @@ button#back-to-top-button {
     position: fixed;
 }
 
-div#show-project-card button.btn {
-    right: 4vw;
-    top: 2vh;
-    position: fixed;
-}
-
-div#show-project-card .project-card-img {
-    max-width: 45% !important;
-    display: inline-block;
-}
-
-div#show-project-card .project-card-content {
-    width: 40%;
-    margin-left: 2vw;
-    display: inline-block;
-}
 
 @keyframes particula-animacao {
     0% {
