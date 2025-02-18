@@ -22,6 +22,12 @@ let hardSkills = {};
 let softSkills = {};
 let langSkills = {};
 
+function setAnoAtualValor() {   
+    let data = new Date();
+    let element = document.getElementById('anoAtualValor');
+    element.innerHTML = data.getFullYear();
+}
+
 function setIdadeAtualValor() {
     let data = new Date();
     let element = document.getElementById('idadeAtualValor');
@@ -284,6 +290,7 @@ function imprimirSite() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+    setAnoAtualValor();
     setIdadeAtualValor();
     loadJsonData();
     setTimeout(headerTransition,1000)
