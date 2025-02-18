@@ -22,6 +22,12 @@ let hardSkills = {};
 let softSkills = {};
 let langSkills = {};
 
+function setIdadeAtualValor() {
+    let data = new Date();
+    let element = document.getElementById('idadeAtualValor');
+    element.innerHTML = data.getFullYear() - 2003;
+}
+
 function readTextFile(file, callback) {
     var rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");
@@ -278,6 +284,7 @@ function imprimirSite() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+    setIdadeAtualValor();
     loadJsonData();
     setTimeout(headerTransition,1000)
     setTimeout(generateParticle,1000)
